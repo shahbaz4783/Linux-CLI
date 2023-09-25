@@ -77,3 +77,32 @@ ncal -J is not a valid option, but ncal -j is valid and it prints julian date of
 
 > Options can also be numeric, as `ncal -3` prints previous, current and next month calender
 
+### Combining Options
+
+We can provide multiple option at once.
+
+For example, this command will print previous, current and upcoming month's calender in julien form.
+
+```bash
+ncal -j -3
+```
+
+We can add more options like this:
+
+```bash
+ncal -j -3 -h
+```
+
+Another syntex
+
+```bash
+ncal -3jh
+```
+
+```bash
+ncal -jhM
+```
+
+```bash
+ncal -Mh3j
+```
