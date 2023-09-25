@@ -54,3 +54,26 @@ ncal april 2019
 sort movies.txt
 ```
 
+## Options
+
+Options are prefix by a dash like -j, -3 etc
+
+```bash
+command -option
+```
+
+> We can turn off highlight current date by passing -h option to ncal command
+
+```bash
+ncal -h
+```
+
+### Case Matters
+Lower case and upper case options works differentely. 
+
+For example, `ncal -H` is not a valid option, but `ncal -M` is.
+
+ncal -J is not a valid option, but ncal -j is valid and it prints julian date of calender.
+
+> Options can also be numeric, as `ncal -3` prints previous, current and next month calender
+
