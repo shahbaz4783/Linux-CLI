@@ -130,3 +130,51 @@ sort -ru names.txt
 
 sort --reverse --unique names.txt
 ```
+
+### Options with Parameters
+
+Some options require us to pass additonal value.
+
+For example,  `ncal -A` requies additional value for which it will display the number of months.
+
+```bash
+ncal -A 4
+```
+
+> It will print out current month and 4 more months afterwards.
+
+It can also be written as `-A4`
+
+```bash
+ncal -A4
+```
+> -B2 will print current month and preious 2 months.
+
+```bash
+ncal -B2
+```
+
+They can be written at same time too
+
+```bash
+ncal -B3 -A1
+```
+
+
+## Argument and Option Together
+
+We can write options and arguments in one command together
+
+For example:
+
+```bash
+ncal -B4 -A3 -hj august 2012
+```
+
+> We can write option first and then argument, or argument first and then option.
+
+```bash
+ncal august 2012 -B4 -A3 -hj
+```
+
+> But generally option is written before argument.
