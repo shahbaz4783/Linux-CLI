@@ -106,3 +106,27 @@ ncal -jhM
 ```bash
 ncal -Mh3j
 ```
+
+### Long Form Options
+
+Some option supports long full word format options, which are prefixed with two dashes instead of one.
+
+```bash
+node -v
+
+node --version
+```
+
+More examples:
+
+```bash
+sort -r movies.txt
+
+sort --reverse movies.txt
+```
+
+```bash
+sort -ru names.txt
+
+sort --reverse --unique names.txt
+```
