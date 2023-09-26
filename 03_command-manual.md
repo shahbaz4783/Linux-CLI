@@ -109,3 +109,61 @@ man 5 passwd
 > By default we navigate to first section. For example, `man passwd` will navigate us to first section of manual.
 
 > For other sections, we have to sepecify the section number. 
+
+
+## Types Of Commands
+
+There are four type of command.
+
+- `Executable Program`: These are compiled binary files. They are usually stores in `/bin`, `/usr/bin` or `/usr/local/bin`.
+
+- `Built-in Shell Command`: These commands are part of the shell.
+
+- `A Shell Function`
+
+- `An alias`
+
+
+### Check type of command
+
+```bash
+type command
+```
+
+To check type of `ncal` command:
+
+```bash
+type ncal
+```
+
+
+## Which Command
+
+To find the exact location of an executable, run:
+
+```bash
+which command
+```
+
+To find the location of `date` command, run:
+
+```bash
+which date
+```
+
+
+## Help Command
+
+Some commands do not have man pages written for them, because they are shell built-in command. 
+
+We can find documentation by help command.
+
+```bash
+help command
+```
+
+To know about cd command, run:
+
+```bash
+help cd
+```
