@@ -64,3 +64,48 @@ In the above synopsis, `source_file` and `target_file` are two arguments which a
 
 Command will not work if those arguments havent been passed.
 
+
+## Manual Sections
+
+The sections of the manual are:
+
+1. General Commands Manual
+2. System Calls Manual
+3. Library Functions Manual
+4. Kernel Interfaces Manual
+5. File Formats Manual
+6. Games Manual
+7. Miscellaneous Information Manual
+8. System Manager's Manual
+9. Kernel Developer's Manual
+
+### Seaching the Manual
+
+We can search for a term within the manual using -k option
+
+```bash
+man -k term
+```
+
+To Search the for passwd:
+
+```bash
+man -k passwd
+```
+This will list down all the available manual section realted to passwd.
+
+To navigate to sections, write like this:
+
+```bash
+man section_no term
+```
+
+To navigate to 5th section of passwd, write this:
+
+```bash
+man 5 passwd
+```
+
+> By default we navigate to first section. For example, `man passwd` will navigate us to first section of manual.
+
+> For other sections, we have to sepecify the section number. 
