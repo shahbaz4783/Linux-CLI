@@ -69,3 +69,37 @@ This is same as head, but it print from end.
 ```bash
 tail countries.txt
 ```
+
+## wc
+
+This command tells the number of lines, words or bytes in files.
+
+```bash
+wc countries.txt
+```
+
+By default, it prints out three numbers: lines, words, bytes.
+
+To print line:
+
+```bash
+wc -l countries
+```
+
+To print words:
+
+```bash
+wc -w countries
+```
+
+To print bytes:
+
+```bash
+wc -c countries
+```
+
+To print characters:
+
+```bash
+wc -m countries
+```
