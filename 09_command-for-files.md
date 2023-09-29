@@ -103,3 +103,40 @@ To print characters:
 ```bash
 wc -m countries
 ```
+
+
+## Sort
+
+This comand outputs the sorted content of a file.
+
+```bash
+sort name.txt
+```
+
+To print in reverse the sorted:
+
+```bash
+sort -r name.txt
+```
+
+### Sorting Numbers
+
+```bash
+sort -n age.txt
+```
+
+
+### Uniques only
+
+```bash
+sort -u age.txt
+```
+
+### Sorting by field
+
+We can specify a particular 'column' that we want to sort by, using -k option followed by field number.
+
+```bash
+sort -nk2 prices.txt
+```
+
