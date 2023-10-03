@@ -36,3 +36,17 @@ This will create a file named 'list.txt' and redirect ls command ouptut in it.
 
 > Previous data in file will lost if it had any after redirecting.
 
+
+## Appending
+
+To keep the existing contents of the file and add new content to the end of the file, use `>>` when redirecting.
+
+```bash
+command >> filename
+```
+
+For example:
+
+```bash
+ncal -3 >> ./folder/calender.txt
+```
