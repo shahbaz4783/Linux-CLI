@@ -73,3 +73,15 @@ We can redirect standard input and output at the same time like this:
 ```bash
 ls < mylist.txt > yourlist.txt
 ```
+
+## Standard Error
+
+By default, the error messages are outputed to the screen, but we can change this by redirecting standard error.
+
+```bash
+ls -error 2> errorlog.txt
+```
+
+> `>2` Symbol used for error, although for std output we can also use `1>` symbol instead of just `>`
+
+
