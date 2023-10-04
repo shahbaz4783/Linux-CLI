@@ -66,3 +66,10 @@ For example, we can pass the content of movies.txt to cat command using :
 cat < movies.txt
 ```
 
+## Redirecing Standard Input & Output Together
+
+We can redirect standard input and output at the same time like this:
+
+```bash
+ls < mylist.txt > yourlist.txt
+```

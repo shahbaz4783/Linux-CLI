@@ -1,0 +1,12 @@
+01_linux-intro.md
+02_command-basics.md
+03_command-manual.md
+04_navigation.md
+05_creating_files_&_folder.md
+06_nano-editor.md
+07_del-move-copy.md
+08_shortcuts.md
+09_command-for-files.md
+10_redirection.md
+README.md
+folder
