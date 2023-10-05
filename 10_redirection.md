@@ -85,3 +85,31 @@ ls -error 2> errorlog.txt
 > `>2` Symbol used for error, although for std output we can also use `1>` symbol instead of just `>`
 
 
+
+## Redirecing Standard Output & Error Together
+
+```bash
+command file.txt > output.txt 2> error.txt
+```
+
+To concat 2 files and output on another file as well output error if any, use:
+
+```bash
+cat ./folder/calender.txt ./folder/mylist.txt > mylistNcal.txt 2> ./folder/errorlog.txt
+```
+
+> Standard Output always should be written first and then standard error.
+
+### Shorter Syntax
+
+If we want to redirect standard output and error in same file, we can use sorter stntax.
+
+```bash
+command file.txt > output.txt 2>&1
+```
+
+### Another Shorter Syntax
+
+```bash
+command file.txt &> output.txt
+```

@@ -1,2 +1,0 @@
-cat: illegal option -- f
-usage: cat [-belnstuv] [file ...]
