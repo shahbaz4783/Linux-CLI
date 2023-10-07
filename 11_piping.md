@@ -40,3 +40,31 @@ ls -l /usr/bin | wc -m > ./folder/programs.txt
 ```bash
 ls -l /usr/bin > ./folder/programs.txt | wc -m > ./folder/programs.txt
 ```
+
+## tr command
+
+```bash
+cat filename | tr s A
+```
+
+This will replace s to A from the filename
+
+```bash
+cat filename | tr -d [:lower:]
+```
+
+This will remove all the lowercase words
+
+
+
+```bash
+cat filename | tr -d [:alpha:]
+```
+
+This will delete all the aplhabats
+
+```bash
+cat filename | tr -d [:blank:]
+```
+
+This will delete all the black space
