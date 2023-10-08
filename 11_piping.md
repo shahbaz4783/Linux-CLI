@@ -68,3 +68,10 @@ cat filename | tr -d [:blank:]
 ```
 
 This will delete all the black space
+
+
+## Multiple Pipes
+
+```bash
+cat file.txt | head -7 | tail -4
+```
