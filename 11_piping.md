@@ -75,3 +75,6 @@ This will delete all the black space
 ```bash
 cat file.txt | head -7 | tail -4
 ```
+
+This will cut down first 7 line of file.txt and then from that 7 lines it will output last 4 lines
+
