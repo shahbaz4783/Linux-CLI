@@ -78,3 +78,18 @@ cat file.txt | head -7 | tail -4
 
 This will cut down first 7 line of file.txt and then from that 7 lines it will output last 4 lines
 
+
+
+## tee command
+
+```bash
+command1 | tee file.txt | command2
+```
+
+For example, to concat 2 files and output it in other file and also run another command after that, use:
+
+```bash
+cat ./folder/calender.txt ./folder/demofile.txt | tee ./folder/democal.txt | wc
+```
+
+this will concat calender and demofile and create a file named democal which will output data of both of file. And after that it will also run wc command
