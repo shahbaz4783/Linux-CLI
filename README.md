@@ -35,7 +35,3 @@ If you have any questions or would like to contribute to these notes, please ope
 ## License
 
 This repository is open-source and available under the [MIT License](LICENSE). You are free to use, modify, and distribute the content as long as you provide attribution.
-
-## Disclaimer
-
-The information provided in these notes is for educational purposes only. Always exercise caution when using Linux commands, especially those with system-wide impact. Make sure to have proper backups and follow best practices to avoid unintended consequences.
