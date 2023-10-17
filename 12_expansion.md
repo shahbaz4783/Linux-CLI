@@ -38,4 +38,33 @@ ls -l *at*
 >It will match any file that includes `at`. Like cat.txt, data.txt so on
 
 
+### The Question Mark (?)
+
+It represents any single character.
+
+```bash
+ls style.???
+```
+
+> It will match any file name `style` that will end by 3 character file extension. Eg, style.css, style.txt etc
+
+```bash
+ls style?.css
+```
+
+> It will match any fil name `style` which have 1 character before extension. Eg, style1.css, style2.css, styleA.css, stylex.css etc
+
+
+```bash
+ls index?.??
+```
+
+> It will match any fil name `style` which have 1 character before extension and two character inextensio. Eg, index1.js, index2.py, indexA.js, indexy.js etc
+
+
+```bash
+mv style?.??? ./styles
+```
+
+> This will move all the files starting with `styles` which have 1 character before extension and 3 at extension. Like style1.css, style2.css
 
