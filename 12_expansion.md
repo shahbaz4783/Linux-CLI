@@ -106,3 +106,70 @@ ls [^0-9]*
 ```
 
 > It will match those files which will not start with a numeric digit 0-9
+
+
+### Character Classes
+We can also use predefined named charactered classes
+
+```bash
+echo [[:upper:]]
+```
+> Any file that start with an uppercase letter
+
+```bash
+echo [[:lower:]]
+```
+> Any file that start with a lowercase letter
+
+```bash
+echo [[:digit:]]
+```
+> Any file that start with a digit (0-9)
+
+
+## Brace Expansion
+
+It will generate multiple string based on a pattern
+
+```bash
+touch page{1..10}.txt
+```
+
+> It will generate 10 new files, page1.txt, page2.txt to page10.txt
+
+
+```bash
+mkdir feb{1..28}
+```
+
+> It will create 28 folders, named feb1, feb2 to feb28
+
+```bash
+echo {7..50..4}
+```
+
+> It will print numbers with interval of 4, like 7, 11, 15...47
+
+
+```bash
+echo plan-{a..d}
+```
+
+> It will print plan-a plan-b plan-c plan-d
+
+
+```bash
+echo {a,b,c}{1,2,3}
+```
+
+> It will print a1 a2 a3 b1 b2 b3 c1 c2 c3
+
+
+### Nested Brace Expansion
+
+```bash
+echo {x,y{1,2,3},z}
+```
+
+> It will print x y1 y2 y3 z
+
