@@ -68,3 +68,41 @@ mv style?.??? ./styles
 
 > This will move all the files starting with `styles` which have 1 character before extension and 3 at extension. Like style1.css, style2.css
 
+
+### The Square Bracket ([])
+
+Inside square brackets, we can specify a range of characters to match.
+
+```bash
+ls pic[153].jpg
+```
+
+> It will only match pic1.jpg, pic3.jpg, pic5.jpg
+
+```bash
+ls [A-G]* 
+```
+
+> It will match any file that will begin with a capital letter from A to G
+
+```bash
+ls file[1-9]
+```
+
+> It will match file1 to file9
+
+
+### Negating Ranges
+
+Inside square brackets, we can specify a range of characters to not match, using a caret (^)
+
+```bash
+ls [^a]*
+```
+> It will match those files which will not start with a
+
+```bash
+ls [^0-9]*
+```
+
+> It will match those files which will not start with a numeric digit 0-9
