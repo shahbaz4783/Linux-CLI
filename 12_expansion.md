@@ -199,3 +199,36 @@ echo $((3**4))
 > It only outputs whole numbers, it will not give decimals.
 
 
+
+## Quoting
+
+```bash
+echo hello my name is         Linux
+```
+
+> This will ignore space and print it without whitespace.
+
+To get whitespaces, use quotes.
+
+### Double Quotes ("...")
+
+```bash
+echo "my name is      Linux"
+```
+
+> This will add whitespace
+
+```bash
+echo "today is...    $(date)"
+```
+
+> This will also run date command. To not run commmands in quotes, use single Quotes
+
+
+### Single Quote
+
+```bash
+echo 'today is...    $(date)'
+```
+
+> It will add whitespaces and also not run date commmand
