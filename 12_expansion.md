@@ -28,7 +28,7 @@ echo *.html
 echo *p
 ```
 
->It will match any file that will start with `p`
+>It will match any file that will end with `p`
 
 
 ```bash
