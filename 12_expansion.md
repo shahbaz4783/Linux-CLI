@@ -173,3 +173,29 @@ echo {x,y{1,2,3},z}
 
 > It will print x y1 y2 y3 z
 
+
+## Arithmetic Expansion
+
+```bash
+echo $((2+4))
+```
+
+```bash
+echo $((2*4))
+```
+
+```bash
+echo $((10/4))
+```
+
+```bash
+echo $((10%4))
+```
+
+```bash
+echo $((3**4))
+```
+
+> It only outputs whole numbers, it will not give decimals.
+
+
