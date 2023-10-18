@@ -232,3 +232,34 @@ echo 'today is...    $(date)'
 ```
 
 > It will add whitespaces and also not run date commmand
+
+
+## Command Substitution
+
+We can use the $(command) syntax or backticks `` to display the output of another command.
+
+```bash
+echo Hello $(whoami)
+```
+
+```bash
+echo Today is `date`
+```
+
+
+
+## Escaping
+
+To selectively prevent expansion or substitution for specific character, we can prefix them by single backslash.
+
+
+```bash
+echo "$30.38"
+```
+
+> It will only print .38 
+> To fix it, use:
+
+```bash
+echo "\$30.38"
+```
