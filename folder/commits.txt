@@ -1,0 +1,46 @@
+fd7078f exspansion
+6f45fb1 expansion exercise
+28e72bc command substitution
+ece9496 quoting
+fc8c1de arithmetic expansion
+e661774 brace expansion
+a54a008 square brackets
+b02299c question mark character
+a95bf21 asterisk character
+92b563a expansion
+67b4458 Update README.md
+decd7d2 pokemon exercise
+d7c032f tee command
+d35d512 multiple pipes example
+288079f multiple pipes
+b050355 tr command
+7210ad6 piping and redirection
+f4f4ffe piping
+2031388 std in and err together
+f58c842 standard error
+336a4e7 redirecting standard input and output togethe
+21cd05c redirecting standard input
+7a6a8d4 appending
+c80b35e redirecting stamdard output
+4666ddf standard streams defination
+b0e3c79 standard streams
+9465326 sort command
+98856d4 wc command
+9a51b02 command for files
+93bd25d history command
+c636a2a shortcuts for teminal
+59eafd3 delete move and copy
+4ba2f65 nano editor
+3db1a7d creating files and folder
+44cae9b navigation
+1b19a7e types of command and help
+724e45c manual sections
+b4814cb synopsis
+0da8b9d manual pages
+349e475 option parameter and option with argument
+358942f long form options
+81f6842 combined options
+c119d6b options
+d930fcc command basics
+302c54b readme created
+f6c6545 Initial commit
