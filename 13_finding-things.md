@@ -26,6 +26,11 @@ To find in current directory
 find ./
 ```
 
+To find empty files/folders
+```bash
+find ./ -empty
+```
+
 ### Finding by type
 
 We can pass option to only find and print files, directories, symbolic links, etc
@@ -187,3 +192,31 @@ To find all the files end with .html and copy them and create '{filename}_COPY'
 ```bash
 find ./ -type f -name '*.css*' -exec cp '{}' '{}_COPY' ';'
 ```
+
+
+## xargs command
+
+When we provide a command via -exec, that command is executed separately for every single element. 
+
+We can instead use a special command called `xargs` to build up the input into a bundle that will provide as an argument list to the next command.
+
+```bash
+find ./ -name '*.css*' | xargs ls -l
+```
+
+By using `exec` it will be like:
+
+```bash
+find ./ -name '*.css*' -exec ls '{}' ';'
+```
+
+> With xargs command, we can also pass arugent to next command form previus command through pipeline which doesnt takes it.
+
+```bash
+find ./ -name "chapter[1-5].txt" | xargs cat > fullbook.txt
+```
+
+```bash
+echo hello world | xargs mkdir
+```
+
