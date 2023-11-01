@@ -90,3 +90,60 @@ ls -lc
 ```bash
 ls -lu
 ```
+
+### Finding by time
+
+> +n for greater than n minutes, -n for less than n minutes, n for exact n minutes, 
+> where n is a number
+
+#### 'min' is minutes
+
+```bash
+find ~/Documents -mmin -n
+```
+
+```bash
+find ~/Documents -cmin +n
+```
+
+```bash
+find ~/Documents -amin n
+```
+
+#### 'time' multiples number with 24 and outputs the findings
+
+```bash
+find ~/Documents -mtime -n
+```
+
+```bash
+find ~/Documents -ctime n
+```
+
+```bash
+find ~/Documents -atime +n
+```
+
+### Finding by Logical Operators (and, or, not)
+
+To find files whose name should not end by '.jpg':
+
+```bash
+find ~/Pictures -not -name "*.jpg"
+```
+
+To find files whose name should end by '.jpg' or '.png':
+
+```bash
+find ~/Pictures -name "*.jpg" -or -name "*.png"
+```
+
+
+To find files whose name should contain 'will' and 'pexels':
+
+```bash
+find ~/Pictures -name "*will*" -and -name "*pexels*"
+```
+
+> we can also pass additional options in it like mtime, mmin, etc
+
