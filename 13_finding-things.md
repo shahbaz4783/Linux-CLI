@@ -21,6 +21,11 @@ This command prints out files and directory we specify
 find ~/Document/projects
 ```
 
+To find in current directory
+```bash
+find ./
+```
+
 ### Finding by type
 
 We can pass option to only find and print files, directories, symbolic links, etc
@@ -147,3 +152,38 @@ find ~/Pictures -name "*will*" -and -name "*pexels*"
 
 > we can also pass additional options in it like mtime, mmin, etc
 
+
+
+### User Defined Actions
+
+We can provide find with our own action to perform using each matching pathnames.
+
+The syntax is:
+
+```bash
+find -exec command {} ;
+```
+
+> The `{}` are  placeholder for the current pathname (each matches)
+> The semicolon `;` is required to indicate the end of the command
+
+
+To delete every file that contains 'broken' in its filename:
+
+```bash
+find ~ -name "*broken*" -exec rm '{}' ';'
+```
+
+> We need to wrap {} and ; in quotes because they have special meanings
+
+To find all the files that are owned by user 'shahabaz' and then list out the full detail or each matching:
+
+```bash
+find ~ -type f -user shahbaz -exec ls -l '{}' ';'
+```
+
+To find all the files end with .html and copy them and create '{filename}_COPY'
+
+```bash
+find ./ -type f -name '*.css*' -exec cp '{}' '{}_COPY' ';'
+```
