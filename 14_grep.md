@@ -164,3 +164,25 @@ grep "[aeiou]{2,4}" -E poem.txt
 ```
 
 > It will find words having a,e,i,o,u 2 to 4 together
+
+
+## Piping grep
+
+A common usecase is to use grep to whittle down or filter a large chunk of data.
+
+```bash
+man grep | grep "count" -C5
+```
+> The man page of grep will be filterd by grep command to search 'count' with 5 lines above and below.
+
+
+```bash
+find ~ -name "*.txt" ! -empty -type f -exec grep "green" '{}' ';'
+```
+
+> It will find all the non empty files in user directory and then pass search 'green' in that text output
+
+```bash
+find ~ -name "*.txt" ! -empty -type f -exec grep -l "green" '{}' ';'
+```
+> by adding -l option will also print the path of it
