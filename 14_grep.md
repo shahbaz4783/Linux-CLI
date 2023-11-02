@@ -140,3 +140,27 @@ grep "s[aeiou]" words.txt -o
 ```
 > It will find and print words with combination of a with a,e,i,o,u
 
+
+
+### Extended Regex
+
+Some characters have special meanings, to use that special meaning use -E option or  `egrep` instead if `grep`.
+
+```bash
+grep "birds?" -E poem.txt
+```
+> Now It will find bird and birds, '?' sign knows that s is optional
+
+
+```bash
+grep "[aeiou]{2}" -E poem.txt
+```
+
+> It will find words having a,e,i,o,u twice together
+
+
+```bash
+grep "[aeiou]{2,4}" -E poem.txt
+```
+
+> It will find words having a,e,i,o,u 2 to 4 together
