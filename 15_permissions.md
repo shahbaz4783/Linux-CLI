@@ -35,3 +35,47 @@ Some of the most common types and their corresponding attributes are:
 - `d`: directory
 - `c`: character special file
 - `l`: symbolic link
+
+
+### Permission
+- `r`: file can be read
+- `w`: file can be modified
+- `x`: file can be executed
+- `-`: files cant be read, modified or executed
+
+
+
+```bash
+rwx
+```
+
+```bash
+r-x
+```
+
+```bash
+rw-
+```
+
+```bash
+r--
+```
+
+```bash
+---
+```
+
+
+
+### Owner
+First 3 characters after file type specifies permission of owner.
+
+### Group
+After first 3 characters, next 3 characters specifies permission of group.
+
+### Word
+Last 3 characters specifies permission of rest of the world.
+
+```bash
+-rwxrw-r-x
+```
