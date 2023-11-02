@@ -53,3 +53,46 @@ grep -ri "ca[tr]" House/
 
 > It will search cat and car in House dir
 
+
+### Counting words
+
+```bash
+grep -c "javascript" app.js
+```
+
+> This will count javascript word in app.js file
+
+
+## Grep Other Options
+
+### getting lines below and above of matches.
+
+To get 2 lines after match word
+```bash
+grep -A2 'javascript' app.js
+```
+
+To get 3 lines before match word
+```bash
+grep -B3 'javascript' app.js
+```
+
+To get 2 lines before and after match word
+```bash
+grep -C2 'javascript' app.js
+```
+
+To get line number where result found
+```bash
+grep -n 'server' app.js
+```
+
+> It will provide the line number where results found
+
+
+To limit the number of matches
+```bash
+grep -m3 'server' app.js
+```
+> It will only print first 3 matches
+
