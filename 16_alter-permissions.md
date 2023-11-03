@@ -66,3 +66,55 @@ chmod 516 secret.txt
 ```
 > read and execute to user, only execute to group, read and write to rest of peoples
 
+
+## Substitute User (su)
+
+We can use `su` command to change user from within our own shell session.
+
+```bash
+su - alex
+```
+
+> It will change the environment too.
+
+```bash
+su alex
+```
+
+> It will not change the environment.
+
+> To leave the session, type `exit`
+
+
+
+## sudo
+
+Some command are not allowed. To run them, use `sudo` before that command.
+
+```bash
+sudo command
+```
+
+> It will ask to enter user password.
+
+
+## Change Ownership (chown)
+
+```bash
+chown alex songs.txt
+```
+
+> It will make alex the owner of songs.txt file
+
+
+```bash
+chown alex:singer songs.txt
+```
+
+> It will make alex the owner of songs.txt and also change the file group owner to the group named 'singer'.
+
+```bash
+chown :singer songs.txt
+```
+
+> It will only change the file group owner.
