@@ -26,16 +26,43 @@ When specifying permission with chmod, we use special syntax:
 
 - To grant read permisson of group
   ```bash
-  chmod g+r secreat.txt
+  chmod g+r secret.txt
   ```
 
 - To grant only read permisson to all
   ```bash
-  chmod a=r secreat.txt
+  chmod a=r secret.txt
   ```
 
 - To remove write permisson to owner
   ```bash
-  chmod u-r secreat.txt
+  chmod u-r secret.txt
   ```
+
+### chmod with octal notation
+
+| Octal | Binary | File mod |
+|-------|--------|----------|
+|   0   |   000  |    ---   |
+|   1   |   001  |    --x   |
+|   2   |   010  |    -w-   |
+|   3   |   011  |    -wx   |
+|   4   |   100  |    r--   |
+|   5   |   101  |    r-x   |
+|   6   |   110  |    rw-   |
+|   7   |   111  |    rwx   |
+
+> It takes 3 values, one for user, one for owner, one for rest of peoples.
+
+For example:
+
+```bash
+chmod 700 secret.txt
+```
+> It will give all permisson to user, and remove all permisson from group and rest of peoples
+
+```bash
+chmod 516 secret.txt
+```
+> read and execute to user, only execute to group, read and write to rest of peoples
 
