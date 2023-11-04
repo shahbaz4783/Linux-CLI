@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# my first script
+
+echo hello $USER
+echo today is $(date)
+
+echo $(date) > date.log
