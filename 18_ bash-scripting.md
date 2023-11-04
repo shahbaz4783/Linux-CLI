@@ -12,6 +12,17 @@ The first line of script should read:
 #!/user/bash
 ```
 
+It is not necessary to use bash only, we can also use python, nodeJS etc in shebang, then we can write script in python
+
+```bash
+#!/user/python3
+```
+
+```bash
+#!/user/node
+```
+
+
 ### Executing the script
 We can execute the script manually like this:
 
@@ -23,6 +34,13 @@ For example:
 
 ```bash
 bash ~/script/greet
+```
+
+
+> To run python, node or other files, use their name, like:
+
+```bash
+node hello
 ```
 
 

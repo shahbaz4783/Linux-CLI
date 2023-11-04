@@ -1,0 +1,5 @@
+#!/user/node
+
+const cat = "mew"
+
+console.log(cat)
